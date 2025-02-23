@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}">
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <div id="content" class="text-center mt-7 md:w-1/2 mx-auto">
+        <!-- <h1 class="text-2xl text-red-700">Something went wrong, your email is not verified!</h1> -->
+        <div data-th-replace="message::messagebox"></div>
+        <a data-th-href="@{/signup}" class="bg-gray-800 hover:bg-gray-900 text-gray-50 dark:bg-blue-600 hover:dark:bg-blue-700 px-3 py-2 rounded mt-4">Signup</a>
+    </div>
+    
+    <script>
+        console.log("Home page log")
+    </script>
+    <script>
+        console.log("Home page second log");
+        
+    </script>
+</body>
+</html>
+
