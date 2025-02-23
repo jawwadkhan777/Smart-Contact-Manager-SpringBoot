@@ -35,4 +35,4 @@ build/
 # Ignore the external properties file
 /application-dev.properties
 
-/node_modules
+node_modules/
